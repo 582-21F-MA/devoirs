@@ -60,4 +60,4 @@ console.log(day); // => 3 (mercredi)
 
 Enfin, créez une fonction nommée `getStats` qui, étant donné un tableau
 de résultats, retourne un objet qui contient le score minimum, le score
-maximum, le score moyen, et le score médian.
+maximum, et le score moyen.
