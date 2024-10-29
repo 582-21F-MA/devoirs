@@ -1,0 +1,52 @@
+:root {
+  --color-bg: white;
+  --color-fg: black;
+  --color-accent: red;
+}
+
+.dark {
+  --color-bg: black;
+  --color-fg: white;
+}
+
+body {
+  background: var(--color-bg);
+}
+
+#digital {
+  font-family: monospace;
+  text-align: center;
+  color: var(--color-fg);
+}
+
+#digital span + span:before {
+  content: ":";
+}
+
+.hand {
+  max-height: 50vw;
+  position: fixed;
+  left: calc(50vw - var(--width) / 2);
+  bottom: calc(100vh / 2);
+  width: var(--width);
+  height: calc(var(--height) * 50vh);
+  transform-origin: bottom center;
+}
+
+#hour-hand {
+  --width: 5px;
+  --height: 0.5;
+  background: var(--color-fg);
+}
+
+#second-hand {
+  --width: 1px;
+  --height: 0.75;
+  background: var(--color-accent);
+}
+
+#minute-hand {
+  --width: 3px;
+  --height: 0.75;
+  background: var(--color-fg);
+}
