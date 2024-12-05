@@ -1,0 +1,35 @@
+body {
+    font-family: system-ui, sans-serif;
+    margin: 2rem 4rem;
+}
+
+.error {
+    color: red;
+    display: none;
+    padding: 0.5rem 0;
+}
+
+form {
+    background: whitesmoke;
+    border: 1px solid gainsboro;
+    padding: 2rem;
+    border-radius: 4px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+input,
+select,
+option {
+    margin-top: 0.5rem;
+    width: 100%;
+}
+
+p {
+    margin: 0;
+}

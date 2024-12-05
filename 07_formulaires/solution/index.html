@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="main.js" type="module"></script>
+        <link rel="stylesheet" href="style.css" />
+        <title>Exercice : formulaires</title>
+    </head>
+    <body>
+        <form>
+            <label>
+                <p>Nom</p>
+                <p class="error"></p>
+                <input id="name-input" type="text" name="name" required />
+            </label>
+            <label>
+                <p>Date de naissance</p>
+                <p class="error"></p>
+                <input
+                    id="birthday-input"
+                    type="date"
+                    name="birthdate"
+                    required
+                />
+            </label>
+            <label>
+                <p>Animal favoris</p>
+                <p class="error"></p>
+                <select id="animal-select" name="animal" required>
+                    <option disabled selected>Choisir</option>
+                    <option value="cat">Chat</option>
+                    <option value="dog">Chien</option>
+                    <option value="other">Autre</option>
+                </select>
+            </label>
+            <label id="other-label">
+                Si vous avez sélectionné « autre », veuillez préciser quel
+                animal
+                <p class="error"></p>
+                <input id="other-input" type="text" name="animal" required />
+            </label>
+            <button>Soumettre</button>
+        </form>
+    </body>
+</html>
