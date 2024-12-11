@@ -17,6 +17,7 @@ function toggleOther(): void {
 }
 
 function handleChangeAnimal(): void {
+    if (animalSelect.value !== "other") return;
     toggleOther();
 }
 
@@ -47,9 +48,15 @@ function handleChangeBirthday(): void {
     const birthday = new Date(birthdayInput.value);
     const today = new Date();
     if (today.getFullYear() - birthday.getFullYear() >= 18) {
-        return birthdayInput.setCustomValidity("");
+        birthdayInput.setCustomValidity("");
+    } else {
+        birthdayInput.setCustomValidity(
+            "Vous devez être majeur·e pour participer",
+        );
     }
-    birthdayInput.setCustomValidity("Vous devez être majeur·e pour participer");
+    const errorNode = birthdayInput.previousElementSibling as HTMLElement;
+    errorNode.textContent = "";
+    birthdayInput.checkValidity();
 }
 
 function main(): void {
