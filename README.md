@@ -1,7 +1,7 @@
 # Devoirs
 
-Vous trouverez dans ce dépôt les énoncés des devoirs. Chaque devoir doit
-être remis _avant_ le début du cours suivant.
+Vous trouverez ici les énoncés des devoirs. Chaque devoir doit être
+remis _avant_ le début du cours suivant.
 
 Les devoirs doivent être téléversés sur GitHub, dans _votre_ propre
 dépôt Classroom (et non pas ici). Les devoirs remis ailleurs ne seront
