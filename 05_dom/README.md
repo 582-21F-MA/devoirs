@@ -21,12 +21,12 @@ Utilisez les cas de test ci-dessous pour tester votre code :
 ```js
 test("return child with matching text content", () => {
     const parent = document.createElement("div");
-    expect(findChild("foo")).toBe(null);
+    expect(findChild(parent, "foo")).toBe(null);
 
     parent.innerHTML = "<p>hello <span>foo</span></p>";
     const child = document.createElement("span");
     child.textContent = "foo";
-    expect(findChild("foo")).toEqual(child);
+    expect(findChild(parent, "foo")).toEqual(child);
 });
 
 test("return true if matching children are siblings", () => {
