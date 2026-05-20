@@ -1,0 +1,9 @@
+body:has(.day) {
+    color: black;
+    background-color: white;
+}
+
+body:has(.night) {
+    color: white;
+    background-color: black;
+}
